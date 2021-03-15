@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main: rgba(240, 128, 128);
+    --sec: rgba(79, 79, 79);
+    --hover: rgb(247, 145, 127);
+}
+
+body {
+    box-sizing: inherit;
+    text-transform: capitalize;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media ( min-width: 1060px ){
+    #navbar {
+        display: block;
+        position: fixed;
+        padding: 10px;
+        background-color:rgba(240, 128, 128, 1);
+        width: 100%;
+        text-align:end;
+        box-shadow: 0 3px 4px var(--sec);
+        z-index: 2;
+    }
+    #welcome-section {
+        height: 60vh;
+        background: url("img/welcome.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+/* nav  */
+#navbar {
+    display: block;
+    position: fixed;
+    padding: 20px;
+    background-color:rgba(240, 128, 128, 1);
+    width: 100%;
+    text-align:end;
+    box-shadow: 0 3px 4px var(--sec);
+    z-index: 2;
+}
+
+#nav-links {
+    margin-left: 18px;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#nav-links:hover {
+    background-color:var(--sec);
+    padding: 20px;
+    font-weight: bold;
+}
+
+#nav-links:last-child {
+    margin-right: 20px;
+}
+
+/* welcome section */
+#welcome-section {
+    height: 100vh;
+    background: url("img/welcome.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-1 {
+    display: block;
+    position: absolute;
+    text-align: center;
+    top: 250px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.content-1 p {
+    color: var(--main);
+}
+
+/* projects section */
+#projects {
+    height: 100vmax;
+    background: #e6e6e6;
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    border-top: 0.4px solid var(--sec);
+}
+
+#head {
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 665px;
+    left: 530px;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.project {
+    height: 60%;
+    width: 50%;
+    border: 2px solid var(--sec);
+    border-radius: 8px;
+    box-shadow: 2px 2px 14px var(--main);
+    position: relative;
+}
+
+.project-photo {
+    
+}
+
+.project-tile {
+    position: absolute;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: var(--main);
+    padding: 10px;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+button {
+    position: relative;
+    left: 320px;
+    bottom: 100px;
+    padding: 11px;
+    background-color: var(--hover);
+    width: 25%;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    transition: 0s ease-in;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: var(--main);
+    opacity: 15;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* contact section */
+
+#contact {
+    height: 80vh;
+    background: url("img/welcome.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: inherit;
+    border-top: 1px solid var(--sec);
+}
+
+#contact .content {
+    display: block;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    z-index: 0.2;
+    margin-top: 80px;
+    font-style: italic;
+}
+
+#contact .contact-links {
+    display: flex;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    margin-top: 90px;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: 410px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    padding-right: 40px;
+    color: var(--main);
+}
+
+.contact-links:hover {
+    transform: translate(20, 10) scale(40, 20);
+}
+
+#footer {
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    margin-top: 100px;
+    border-top: 2px solid var(--main);
+    padding: 10px;
+}
